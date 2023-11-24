@@ -13,4 +13,14 @@ export class HomePage {
   goToSearch(){
     this.router.navigate(['/pag-busqueda']);
    }
+
+  goToShop(){
+    this.router.navigate(['/compra']);
+  }
+  goToReels(){
+    this.router.navigate(['/reels']);
+  }
+  goToPerfil(){
+    this.router.navigate(['/perfil']);
+  }
 }

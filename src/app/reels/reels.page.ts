@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-pag-busqueda',
-  templateUrl: './pag-busqueda.page.html',
-  styleUrls: ['./pag-busqueda.page.scss'],
+  selector: 'app-reels',
+  templateUrl: './reels.page.html',
+  styleUrls: ['./reels.page.scss'],
 })
-export class PagBusquedaPage implements OnInit {
+export class ReelsPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -18,10 +18,11 @@ export class PagBusquedaPage implements OnInit {
   goToShop (){
     this.router.navigate(['/compra']);
   }
-  goToReels(){
-    this.router.navigate(['/reels']);
-  }
   goToPerfil(){
     this.router.navigate(['/perfil']);
   }
+  goToSearch(){
+    this.router.navigate(['/pag-busqueda']);
+  }
+
 }

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-pag-busqueda',
-  templateUrl: './pag-busqueda.page.html',
-  styleUrls: ['./pag-busqueda.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
 })
-export class PagBusquedaPage implements OnInit {
+export class PerfilPage implements OnInit {
 
   constructor(private router: Router) { }
 
@@ -21,7 +21,7 @@ export class PagBusquedaPage implements OnInit {
   goToReels(){
     this.router.navigate(['/reels']);
   }
-  goToPerfil(){
-    this.router.navigate(['/perfil']);
+  goToSearch(){
+    this.router.navigate(['/pag-busqueda']);
   }
 }

@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'pag-busqueda',
     loadChildren: () => import('./Busqueda/pag-busqueda/pag-busqueda.module').then( m => m.PagBusquedaPageModule)
   },
+  {
+    path: 'compra',
+    loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
+  },
+  {
+    path: 'reels',
+    loadChildren: () => import('./reels/reels.module').then( m => m.ReelsPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 ];
 
 @NgModule({
